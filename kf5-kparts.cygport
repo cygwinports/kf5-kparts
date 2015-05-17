@@ -1,0 +1,27 @@
+inherit kf5
+
+NAME="kf5-kparts"
+VERSION=5.10.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 user interface component plugin library"
+DESCRIPTION="This library implements the framework for KDE parts, which are
+elaborate widgets with a user-interface defined in terms of actions
+(menu items, toolbar icons)."
+
+PKG_NAMES="libKF5Parts5 libKF5Parts-devel"
+libKF5Parts5_CONTENTS="
+	usr/bin/cygKF5Parts-5.dll
+	${QT5_PLUGINSDIR#/}/
+	usr/share/doc/
+	usr/share/kservicetypes5/
+	usr/share/locale/
+"
+libKF5Parts_devel_REQUIRES="libKF5I18n-devel libKF5IconThemes-devel libKF5KIO-devel libKF5Notifications-devel libKF5TextWidgets-devel libKF5XmlGui-devel"
+libKF5Parts_devel_CONTENTS="
+	usr/include/KF5/KParts/
+	usr/include/KF5/kparts_version.h
+	usr/lib/cmake/KF5Parts/
+	${QT5_MKSPECSDIR#/}/modules/qt_KParts.pri
+	usr/lib/libKF5Parts.dll.a
+"
