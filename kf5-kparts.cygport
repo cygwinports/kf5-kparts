@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kparts"
-VERSION=5.35.0
+VERSION=5.39.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 user interface component plugin library"
@@ -24,4 +24,5 @@ libKF5Parts_devel_CONTENTS="
 	usr/lib/cmake/KF5Parts/
 	${QT5_MKSPECSDIR#/}/modules/qt_KParts.pri
 	usr/lib/libKF5Parts.dll.a
+	usr/share/kdevappwizard/templates/kpartsapp.tar.bz2
 "
